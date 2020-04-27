@@ -1,9 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvaGl0dmRhcyIsImlkIjoiNWVhNjRmYmNiYzJhN2U1ODY4YWZlMmRhIiwiaWF0IjoxNTg3OTYwNDM3fQ.K7jVD_nE_RCe9PvcV0ID-wgcvoI5T2JNyE7mMcL8EuQ
 
 {
-  "title": "jaya's blog",
-  "author": "jaya das",
-  "url": "jayadas.com",
-  "likes": 2
+  "title": "blog",
+  "author": "author",
+  "url": "blog.com",
+  "likes": 0
 }
