@@ -21,4 +21,17 @@ const create = async newObject => {
   return response.data
 }
 
-export default { getAll, create, setToken }
+const addComment = async (id, comment) => {
+  const config = {
+    headers: { 'Content-Type': 'application/json' },
+  }
+
+  const newObject = {
+    comment
+  }
+
+  const response = await axios.post(`${baseUrl}/${id}/comments`, newObject, config)
+  return response.data
+}
+
+export default { getAll, create, setToken, addComment }
